@@ -1,11 +1,11 @@
 const express = require('express');
 const cors = require('cors');
 const { MongoConnect } = require('./models/user'); // MongoDB connection
-const loginRoute = require('./routes/login'); // Import login route
-const leaveRoutes = require("./routes/leaveR"); // Import leave routes
-const payrollRoutes = require("./routes/payR");
-const productivityRoute = require("./routes/performanceR");
-const jobRoutes = require("./routes/jobPostingR");
+const loginRoute = require('./hr/routes/login'); // Import login route
+const leaveRoutes = require("./hr/routes/leaveR"); // Import leave routes
+const payrollRoutes = require("./hr/routes/payR");
+const productivityRoute = require("./hr/routes/performanceR");
+const jobRoutes = require("./hr/routes/jobPostingR");
 
 
 const app = express(); // ✅ Initialize app first

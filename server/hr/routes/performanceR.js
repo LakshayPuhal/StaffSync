@@ -1,5 +1,5 @@
 const express = require("express");
-const Performance = require("../models/PerformanceM");
+const Performance = require("../../models/PerformanceM");
 const router = express.Router();
 
 // Fetch performance data

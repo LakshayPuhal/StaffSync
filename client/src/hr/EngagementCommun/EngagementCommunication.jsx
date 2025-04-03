@@ -28,12 +28,7 @@ function Engagement() {
           🎉 Events
         </button>
 
-        <button 
-          onClick={() => handleNavigate("training")} 
-          className="w-64 bg-yellow-500 text-white p-6 rounded-lg shadow-lg text-center hover:bg-yellow-600 transition"
-        >
-          📚 Training & Development
-        </button>
+       
 
         <button 
           onClick={() => handleNavigate("feedback")} 

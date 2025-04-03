@@ -13,10 +13,11 @@ import JobPostingForm from "./hr/JobPosting";
 import JobList from "./hr/JobPosting";
 import TrainingDevelopment from "./hr/TrainingDevelopment";
 import Engagement from "./hr/EngagementCommun/EngagementCommunication";
+import Dashboard from "./company/Dasgboard"
 
 import Announcements from "./hr/EngagementCommun/Announcements";
 import Events from "./hr/EngagementCommun/events";
-import Training from "./hr/EngagementCommun/Training";
+
 import Feedback from "./hr/EngagementCommun/Feedback";
 import Discussions from "./hr/EngagementCommun/Discussions";
 
@@ -45,11 +46,11 @@ function App() {
           <Route path="/engagement-and-communication" element={<Engagement />} />
           <Route path="/engagement-and-communication/announcements" element={<Announcements />} />
           <Route path="/engagement-and-communication/events" element={<Events />} />
-          <Route path="/engagement-and-communication/training" element={<Training />} />
+         
           <Route path="/engagement-and-communication/feedback" element={<Feedback />} />
           <Route path="/engagement-and-communication/discussions" element={<Discussions />} />
 
-          
+          <Route path="/companyDashboard" element={<Dashboard/>}/>
           
             
           

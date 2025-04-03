@@ -1,4 +1,4 @@
-const Payroll = require("../models/paySlipM");
+const Payroll = require("../../models/paySlipM");
 const PDFDocument = require("pdfkit");
 const fs = require("fs");
 

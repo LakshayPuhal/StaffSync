@@ -26,7 +26,7 @@ function Register() {
       {/* Login Section */}
       <div className="max-w-sm w-full p-6 border rounded-lg shadow-lg bg-white text-gray-800">
         <h2 className="text-2xl font-bold mb-6 text-center">
-          Login to your employee account
+          Login to your employee or HR account
         </h2>
         <label htmlFor="company" className="block text-gray-700 mb-2">
           Company
