@@ -5,7 +5,7 @@ function Subscription() {
   const navigate = useNavigate();
   const handlePurchage =(e)=>{
     e.preventDefault();
-    navigate("/companyDashboard");
+    navigate("/CompAccount");
 
   }
   return (

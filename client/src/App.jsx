@@ -13,13 +13,15 @@ import JobPostingForm from "./hr/JobPosting";
 import JobList from "./hr/JobPosting";
 import TrainingDevelopment from "./hr/TrainingDevelopment";
 import Engagement from "./hr/EngagementCommun/EngagementCommunication";
-import Dashboard from "./company/Dasgboard"
+import Dashboard from "./company/Dashboard"
 
 import Announcements from "./hr/EngagementCommun/Announcements";
 import Events from "./hr/EngagementCommun/events";
 
 import Feedback from "./hr/EngagementCommun/Feedback";
 import Discussions from "./hr/EngagementCommun/Discussions";
+
+import ComLog from "./company/loginComp";
 
 
 function App() {
@@ -51,6 +53,7 @@ function App() {
           <Route path="/engagement-and-communication/discussions" element={<Discussions />} />
 
           <Route path="/companyDashboard" element={<Dashboard/>}/>
+          <Route path="/CompAccount" element={<ComLog/>}/>
           
             
           
