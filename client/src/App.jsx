@@ -23,6 +23,15 @@ import Discussions from "./hr/EngagementCommun/Discussions";
 
 import ComLog from "./company/loginComp";
 
+import Recruitment from "./company/Recruitment ";
+import ComplianceManagement from "./company/compliance";
+
+import OrgChart from "./company/orgChart";
+
+import PolicyManagement from "./company/PolicyManagement"
+ import BudgetDashboard from "./company/Budget";
+
+
 
 function App() {
   return (
@@ -54,6 +63,16 @@ function App() {
 
           <Route path="/companyDashboard" element={<Dashboard/>}/>
           <Route path="/CompAccount" element={<ComLog/>}/>
+          <Route path ="/recruitment" element ={<Recruitment/>}/>
+          <Route path="/compliance" element={<ComplianceManagement />} />
+          <Route path="/org-chart" element={<OrgChart />} />
+          <Route path="/policies" element={<PolicyManagement />} />
+
+          <Route path="/budgeting" element={<BudgetDashboard />} />
+
+
+
+          
           
             
           

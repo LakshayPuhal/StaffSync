@@ -10,7 +10,7 @@ function ComLog() {
   };
 
   const log = () => {
-    navigate("/");
+    navigate("/companyDashboard");
   };
 
   return (
