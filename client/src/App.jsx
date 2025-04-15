@@ -13,29 +13,19 @@ import JobPostingForm from "./hr/JobPosting";
 import JobList from "./hr/JobPosting";
 import TrainingDevelopment from "./hr/TrainingDevelopment";
 import Engagement from "./hr/EngagementCommun/EngagementCommunication";
-import Dashboard from "./company/Dashboard"
-
+import Dashboard from "./company/Dashboard";
 import Announcements from "./hr/EngagementCommun/Announcements";
 import Events from "./hr/EngagementCommun/events";
-
 import Feedback from "./hr/EngagementCommun/Feedback";
 import Discussions from "./hr/EngagementCommun/Discussions";
-
 import ComLog from "./company/loginComp";
-
 import Recruitment from "./company/Recruitment ";
 import ComplianceManagement from "./company/compliance";
-
 import OrgChart from "./company/orgChart";
-
-import PolicyManagement from "./company/PolicyManagement"
+import PolicyManagement from "./company/PolicyManagement";
 import BudgetDashboard from "./company/Budget";
-import  ShowcasePage from  "./LoginShowcase";
-import Employee from "./Employee/EmpDashboard"
-
- 
-
-
+import ShowcasePage from "./LoginShowcase";
+import Employee from "./Employee/EmpDashboard";
 
 function App() {
   return (
@@ -61,28 +51,19 @@ function App() {
           <Route path="/engagement-and-communication" element={<Engagement />} />
           <Route path="/engagement-and-communication/announcements" element={<Announcements />} />
           <Route path="/engagement-and-communication/events" element={<Events />} />
-         
           <Route path="/engagement-and-communication/feedback" element={<Feedback />} />
           <Route path="/engagement-and-communication/discussions" element={<Discussions />} />
 
           <Route path="/companyDashboard" element={<Dashboard/>}/>
           <Route path="/CompAccount" element={<ComLog/>}/>
-          <Route path ="/recruitment" element ={<Recruitment/>}/>
+          <Route path="/recruitment" element={<Recruitment/>}/>
           <Route path="/compliance" element={<ComplianceManagement />} />
           <Route path="/org-chart" element={<OrgChart />} />
           <Route path="/policies" element={<PolicyManagement />} />
 
           <Route path="/budgeting" element={<BudgetDashboard />} />
-          <Route path ="/showLog" element={<ShowcasePage/>}/>
-          <Route path ="/employee" element={<Employee/>}/>
-
-
-
-
-          
-          
-            
-          
+          <Route path="/showLog" element={<ShowcasePage/>}/>
+          <Route path="/employee" element={<Employee/>}/>
         </Routes>
       </Router>
     </FormProvider>
