@@ -29,7 +29,11 @@ import ComplianceManagement from "./company/compliance";
 import OrgChart from "./company/orgChart";
 
 import PolicyManagement from "./company/PolicyManagement"
- import BudgetDashboard from "./company/Budget";
+import BudgetDashboard from "./company/Budget";
+import  ShowcasePage from  "./LoginShowcase";
+import Employee from "./Employee/EmpDashboard"
+
+ 
 
 
 
@@ -69,6 +73,9 @@ function App() {
           <Route path="/policies" element={<PolicyManagement />} />
 
           <Route path="/budgeting" element={<BudgetDashboard />} />
+          <Route path ="/showLog" element={<ShowcasePage/>}/>
+          <Route path ="/employee" element={<Employee/>}/>
+
 
 
 

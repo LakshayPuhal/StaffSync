@@ -16,7 +16,7 @@ function Register() {
 
   const handleLogin = () => {
     console.log("Login form data:", formData);
-    navigate("/hrWork");
+    navigate("/showLog");
   };
 
   const handleReg = () => navigate("/registeration");
