@@ -45,7 +45,7 @@ function RegForm() {
         <h2 className="text-2xl font-bold mb-6 text-center">Register Your Company</h2>
 
         <div className="flex flex-wrap items-center justify-between gap-4">
-          {/* Company Name Input */}
+          
           <div className="flex-1">
             <label htmlFor="companyName" className="block text-gray-700 mb-2">
               Company Name
@@ -61,7 +61,7 @@ function RegForm() {
             />
           </div>
 
-          {/* Employee Count Dropdown */}
+          
           <div className="flex-1">
             <label htmlFor="employeeCount"  className="block text-gray-700 mb-2">
               Employee Count
@@ -102,7 +102,7 @@ function RegForm() {
           placeholder="Enter your industry"
         />
 
-        {/* Location Inputs for Country, State, District */}
+        
         <h1 className="flex justify-center items-center text-lg">Location</h1>
 
         <div className="flex gap-4">
@@ -150,7 +150,7 @@ function RegForm() {
           </div>
         </div>
 
-        {/* Contact Information Input */}
+        
         <label htmlFor="contact" className="block text-gray-700 mb-2">
           Contact Information
         </label>
@@ -164,7 +164,7 @@ function RegForm() {
           placeholder="Enter your contact information"
         />
 
-        {/* Submit Button */}
+        
         <button
           type="submit"
           onClick={handleSubmit}

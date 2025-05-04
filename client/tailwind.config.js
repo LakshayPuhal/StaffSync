@@ -6,10 +6,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'blue-steel': '#4682b4', // Professional navy blue color
+        'blue-steel': '#4682b4', 
       },
       fontFamily: {
-        calligraphy: ['"Dancing Script"', 'cursive'], // Add your calligraphy font
+        calligraphy: ['"Dancing Script"', 'cursive'], 
       },
     },
   },

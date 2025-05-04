@@ -21,7 +21,10 @@ export default function SeniorHRDashboard() {
     { name: "Performance Dashboards", path: "/performance", icon: <FaChartBar /> },
     { name: "Compliance Management", path: "/compliance", icon: <FaUsers /> },
     { name: "Organizational Chart", path: "/org-chart", icon: <FaUsers /> },
-    { name: "Advanced Analytics", path: "/analytics", icon: <FaChartBar /> },
+    { name: "Stakeholder Alignment", path: "/Stakeholder", icon: <FaUsers /> },
+    { name: "Cultural Transformation", path: "/Cultural", icon: <FaUsers /> },
+    { name: "Predictive Skill Gap", path: "/SkillGap", icon: <FaUsers /> },
+    
     { name: "Policy Management", path: "/policies", icon: <FaUsers /> },
     { name: "Recruitment Oversight", path: "/recruitment", icon: <FaUsers /> },
     { name: "Budgeting", path: "/budgeting", icon: <FaMoneyBillWave /> },

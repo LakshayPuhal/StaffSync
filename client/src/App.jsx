@@ -14,10 +14,6 @@ import JobList from "./hr/JobPosting";
 import TrainingDevelopment from "./hr/TrainingDevelopment";
 import Engagement from "./hr/EngagementCommun/EngagementCommunication";
 import Dashboard from "./company/Dashboard";
-import Announcements from "./hr/EngagementCommun/Announcements";
-import Events from "./hr/EngagementCommun/events";
-import Feedback from "./hr/EngagementCommun/Feedback";
-import Discussions from "./hr/EngagementCommun/Discussions";
 import ComLog from "./company/loginComp";
 import Recruitment from "./company/Recruitment ";
 import ComplianceManagement from "./company/compliance";
@@ -26,6 +22,23 @@ import PolicyManagement from "./company/PolicyManagement";
 import BudgetDashboard from "./company/Budget";
 import ShowcasePage from "./LoginShowcase";
 import Employee from "./Employee/EmpDashboard";
+import Leave from "./Employee/EmpLeave"
+import Attendance from "./Employee/EmpAttendance";
+ import PayAndBenefite from "./Employee/EmpPayAndBenefits";
+import EmployeeProfile from "./Employee/EmpProfile";
+import PerformanceAnalysis from "./company/Performance";
+import StakeholderAlignmentMatrix from "./company/StakeholderAlignmentMatrix";
+import CulturalTransformationTracker from "./company/CulturalTransformationTracker";
+import PredictiveSkillGapAnalyzer from "./company/PredictiveSkillGapAnalyzer";
+
+import Announcements from "./hr/EngagementCommun/Announcements";
+import Events from "./hr/EngagementCommun/Events";
+import Feedback from "./hr/EngagementCommun/Feedback";
+import Discussions from "./hr/EngagementCommun/Discussions";
+
+
+
+
 
 function App() {
   return (
@@ -33,12 +46,12 @@ function App() {
       <Router>
         <Navi />
         <Routes>
-          {/* Public Routes */}
+          
           <Route path="/" element={<Register />} />
           <Route path="/registeration" element={<RegForm />} />
           <Route path="/subscription" element={<Subscription />} />
 
-          {/* HR Routes */}
+         
           <Route path="/hrWork/*" element={<MainPage />} />
           <Route path="/leave-management" element={<LeaveManagement />} />
           <Route path="/payroll-and-benefits" element={<PayrollPage />} />
@@ -47,7 +60,7 @@ function App() {
           <Route path="/job-list" element={<JobList />} />
           <Route path="/training-and-development" element={<TrainingDevelopment />} />
           
-          {/* Engagement & Communication with Nested Routes */}
+          
           <Route path="/engagement-and-communication" element={<Engagement />} />
           <Route path="/engagement-and-communication/announcements" element={<Announcements />} />
           <Route path="/engagement-and-communication/events" element={<Events />} />
@@ -64,7 +77,16 @@ function App() {
           <Route path="/budgeting" element={<BudgetDashboard />} />
           <Route path="/showLog" element={<ShowcasePage/>}/>
           <Route path="/employee" element={<Employee/>}/>
+          <Route path ="/leave" element={<Leave/>}/>
+          <Route path ="/attendance" element={<Attendance/>}/>
+          <Route path ="/Payroll" element={<PayAndBenefite/>}/>
+          <Route path ="/profile" element={<EmployeeProfile/>}/>
+          <Route path ="/performance" element={<PerformanceAnalysis/>}/>
+          <Route path ="/Stakeholder" element={<StakeholderAlignmentMatrix/>}/>
+          <Route path ="/Cultural" element={<CulturalTransformationTracker/>}/>
+          <Route path ="/SkillGap" element={<PredictiveSkillGapAnalyzer/>}/>
         </Routes>
+
       </Router>
     </FormProvider>
   );

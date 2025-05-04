@@ -1,55 +1,54 @@
-import React from "react";
-import { useNavigate, Outlet } from "react-router-dom";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Announcements from "./Announcements";
+import Events from "./Events";
+import Feedback from "./Feedback";
+import Discussions from "./Discussions";
 
-function Engagement() {
+function EngagementAndCommunication() {
   const navigate = useNavigate();
+  const [activeTab, setActiveTab] = useState("announcements");
 
-  const handleNavigate = (path) => {
-    // Any logic can go here
-    navigate(path);
-  };
+  const tabs = [
+    { id: "announcements", label: "Announcements", component: Announcements },
+    { id: "events", label: "Events", component: Events },
+    { id: "feedback", label: "Feedback & Surveys", component: Feedback },
+    { id: "discussions", label: "Discussions", component: Discussions },
+  ];
+
+  const ActiveComponent = tabs.find((tab) => tab.id === activeTab)?.component;
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center p-6">
-      <h1 className="text-4xl font-bold mb-6">Communication & Engagement</h1>
-      
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <button 
-          onClick={() => handleNavigate("announcements")} 
-          className="w-64 bg-blue-500 text-white p-6 rounded-lg shadow-lg text-center hover:bg-blue-600 transition"
-        >
-          📢 Announcements
-        </button>
-        
-        <button 
-          onClick={() => handleNavigate("events")} 
-          className="w-64 bg-green-500 text-white p-6 rounded-lg shadow-lg text-center hover:bg-green-600 transition"
-        >
-          🎉 Events
-        </button>
-
-       
-
-        <button 
-          onClick={() => handleNavigate("feedback")} 
-          className="w-64 bg-purple-500 text-white p-6 rounded-lg shadow-lg text-center hover:bg-purple-600 transition"
-        >
-          📝 Feedback & Surveys
-        </button>
-
-        <button 
-          onClick={() => handleNavigate("discussions")} 
-          className="w-64 bg-red-500 text-white p-6 rounded-lg shadow-lg text-center hover:bg-red-600 transition"
-        >
-          💬 Discussions
-        </button>
+    <div className="space-y-6">
+      <h2 className="text-3xl font-bold text-gray-800">Engagement & Communication</h2>
+      {/* Tabs */}
+      <div className="flex flex-wrap gap-4 mb-6">
+        {tabs.map((tab) => (
+          <button
+            key={tab.id}
+            onClick={() => setActiveTab(tab.id)}
+            className={`px-4 py-2 text-lg font-semibold rounded-lg transition-all duration-300 ${
+              activeTab === tab.id
+                ? "bg-gradient-to-r from-blue-500 to-teal-500 text-white"
+                : "bg-gray-200 text-gray-800 hover:bg-gray-300"
+            }`}
+          >
+            {tab.label}
+          </button>
+        ))}
       </div>
-
-      <div className="w-full mt-10">
-        <Outlet />
+      {/* Tab Content */}
+      <div className="bg-white p-8 rounded-xl shadow-xl">
+        {ActiveComponent && <ActiveComponent />}
       </div>
+      <button
+        onClick={() => navigate("/companyDashboard")}
+        className="w-full p-4 bg-gradient-to-r from-gray-500 to-gray-600 text-white text-lg font-semibold rounded-lg hover:from-gray-600 hover:to-gray-700 transition-all duration-300"
+      >
+        Back to Dashboard
+      </button>
     </div>
   );
 }
 
-export default Engagement;
+export default EngagementAndCommunication;

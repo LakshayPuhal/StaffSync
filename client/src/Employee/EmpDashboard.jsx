@@ -5,7 +5,7 @@ function Employee({ activeComponent }) {
 
   return (
     <div className="flex flex-col md:flex-row">
-      {/* Sidebar */}
+      
       <div className="w-full md:w-64 bg-gray-800 text-white md:h-screen p-4">
         <h2 className="text-xl font-bold mb-4">StaffSync</h2>
         <ul>
@@ -31,21 +31,12 @@ function Employee({ activeComponent }) {
           </li>
           <li className="mb-2">
             <a
-              href="/performance"
+              href="/Payroll"
               className={`flex items-center p-2 rounded ${
                 activeComponent === "performance" ? "bg-gray-700" : ""
               }`}
             >
-              <FaChartBar className="mr-2" /> Performance
-            </a>
-          </li>
-          <li className="mb-2">
-            <a
-              href="/payroll"
-              className={`flex items-center p-2 rounded ${
-                activeComponent === "payroll" ? "bg-gray-700" : ""
-              }`}
-            >
+             
               <FaMoneyBill className="mr-2" /> Payroll
             </a>
           </li>
@@ -62,11 +53,11 @@ function Employee({ activeComponent }) {
         </ul>
       </div>
 
-      {/* Main Content */}
+    
       <div className="flex-1 p-4 bg-gray-100 min-h-screen">
         {isDashboard ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {/* Today's Attendance */}
+           
             <div className="bg-white p-4 rounded shadow">
               <h3 className="text-lg font-semibold mb-2">Today's Entry</h3>
               <p className="text-sm text-gray-600">Check-in Time: 09:15 AM</p>
@@ -79,27 +70,27 @@ function Employee({ activeComponent }) {
               <p className="text-2xl font-bold text-green-600">5</p>
             </div>
 
-            {/* Upcoming Holidays */}
+            
             <div className="bg-white p-4 rounded shadow">
               <h3 className="text-lg font-semibold mb-2">Upcoming Holiday</h3>
               <p className="text-sm text-gray-600">Ambedkar Jayanti - April 14</p>
             </div>
 
-            {/* Performance Summary */}
+          
             <div className="bg-white p-4 rounded shadow">
               <h3 className="text-lg font-semibold mb-2">Last Month's Rating</h3>
               <p className="text-sm text-gray-600">Rating: ⭐⭐⭐⭐☆</p>
               <p className="text-sm text-gray-600">Comments: Excellent team collaboration</p>
             </div>
 
-            {/* Payroll Preview */}
+            
             <div className="bg-white p-4 rounded shadow">
               <h3 className="text-lg font-semibold mb-2">Payroll Summary</h3>
               <p className="text-sm text-gray-600">Last Salary: ₹62,000</p>
               <p className="text-sm text-gray-600">Paid on: March 31, 2025</p>
             </div>
 
-            {/* Personal Goals */}
+           
             <div className="bg-white p-4 rounded shadow">
               <h3 className="text-lg font-semibold mb-2">My Goals</h3>
               <ul className="text-sm text-gray-600 list-disc ml-5">
@@ -109,21 +100,21 @@ function Employee({ activeComponent }) {
               <p className="text-blue-600 text-sm mt-2 cursor-pointer">+ Set New Goal</p>
             </div>
 
-            {/* Feedback Summary */}
+            
             <div className="bg-white p-4 rounded shadow">
               <h3 className="text-lg font-semibold mb-2">Recent Feedback</h3>
               <p className="text-sm text-gray-600 italic">"Great progress on the UI upgrade!"</p>
               <p className="text-sm text-gray-500 mt-1">– From Team Lead</p>
             </div>
 
-            {/* HR Handbook */}
+           
             <div className="bg-white p-4 rounded shadow">
               <h3 className="text-lg font-semibold mb-2">HR Handbook</h3>
               <p className="text-sm text-gray-600">Access updated policies and company guidelines.</p>
               <a href="/docs/hr-policy.pdf" className="text-blue-600 text-sm mt-2 block">View Handbook →</a>
             </div>
 
-            {/* Work Schedule */}
+           
             <div className="bg-white p-4 rounded shadow">
               <h3 className="text-lg font-semibold mb-2">This Week's Schedule</h3>
               <ul className="text-sm text-gray-600">
@@ -135,7 +126,7 @@ function Employee({ activeComponent }) {
               </ul>
             </div>
 
-            {/* Training Materials */}
+            
             <div className="bg-white p-4 rounded shadow">
               <h3 className="text-lg font-semibold mb-2">Training</h3>
               <p className="text-sm text-gray-600">ReactJS Basics – 70% completed</p>
